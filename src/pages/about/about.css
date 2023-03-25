@@ -1,0 +1,36 @@
+.about {
+  background-color: #1abc9b;
+}
+.about div {
+  padding: 10px;
+  color: white;
+}
+.about__head {
+  text-align: center;
+  font-size: 30px;
+  margin-block: 40px;
+}
+.about__row {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row;
+  gap: 40px;
+  max-width: 80%;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 1300px) {
+  .about__row {
+    max-width: 100%;
+  }
+}
+.about__row p {
+  flex-basis: calc(90% / 2);
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 992px) {
+  .about__row p {
+    flex-basis: 100%;
+  }
+}

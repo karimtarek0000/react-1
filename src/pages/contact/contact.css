@@ -1,0 +1,40 @@
+.contact div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contact__head {
+  text-align: center;
+  font-size: 30px;
+  margin-block: 40px;
+  text-transform: uppercase;
+}
+.contact__row {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .contact__row {
+    width: 80%;
+  }
+}
+.contact__row input,
+textarea {
+  all: unset;
+  font-size: 25px;
+  padding-block: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.215);
+  resize: none;
+}
+.contact__row button {
+  all: unset;
+  padding: 20px;
+  color: white;
+  background-color: #1abc9b;
+  border-radius: 10px;
+  align-self: flex-start;
+  margin-top: 15px;
+  cursor: pointer;
+}
